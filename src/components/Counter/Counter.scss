@@ -1,0 +1,29 @@
+@use "../../assets/sass/_variables.scss" as *;
+
+
+.count {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+
+    .button {
+        min-width: 50px;
+        padding: 10px 20px;
+        border-radius: 15px;
+        margin: 0px 10px 10px 15px;
+        border: none;
+        background-color: transparent;
+        // background-color: $color-lightprimary transparent;
+        // background-color: $color-white transparent;
+        border-radius: 10px;
+        // box-shadow: 0px 10px 20px rgba($color-black, 0.5);
+        box-shadow: 2px 5px 5px rgba($color-primary, 0.5);
+        font-size: 15px;
+        // font-weight: 600;
+    }
+}

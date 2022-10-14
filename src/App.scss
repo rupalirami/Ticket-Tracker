@@ -1,0 +1,36 @@
+// App.scss
+@use "./assets/sass/_variables.scss" as *;
+
+.app {
+  color: $color-black;
+
+  & > * {
+    padding: 0 50px;
+
+  }
+
+    .all-teams {
+    //   background-color: $color-primary;
+      padding: 10px 50px 20px 50px;
+    }
+
+    & > * {
+      padding: 0px 50px;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+  .app {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 25px 100px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content;
+
+    & > * {
+      padding: 0;
+    }
+  }
+}
